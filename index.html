@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson Electronics Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        .layout-table{
+            background-color: #a4cff2;
+            width: 700px;
+            margin: 0 auto;
+            border-collapse: separate;
+        }
+        .separator-line {
+            border: 2;
+            border-top: 2px solid #968787;
+            margin: 10px 0;
+        }
+        .label-col {
+            text-align: left;
+            width: 130px;
+            vertical-align: top;
+            padding-left: 65px;
+        }
+        .logo-box {
+            background-color: #00ffff;
+            border: 1px solid #000;
+            width: 250px;
+            margin: 0 auto;
+            padding: 1px;
+            text-align: center;
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+            font-size: 23px;
+            border-radius: 10px;
+        }
+        .logo-line {
+            border: 0;
+            border-top: 3px solid rgb(12, 8, 8);
+            margin: -3px 0;
+        }
+        .input-long { width: 200px; }
+        .input-short { width: 140px; }
+        .input-tiny { width: 110px; }
+        input[type="radio"],
+        input[type="checkbox"] {
+            accent-color: #168f30;
+        }
+        .nested-table {
+            padding-right: 20px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            margin-left: 2px;
+            border-collapse: collapse;
+        }
+        .title {
+            text-align: center; 
+            padding-top: 15px; 
+            padding-bottom: 15px;
+        }
+    </style> 
+</head>
+<body>
+        <table class="layout-table">
+            <tr>
+                <td colspan="4">
+                    <div class="logo-box">
+                        Jackson
+                        <hr class="logo-line">
+                        Electronics
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="title">
+                    <div style="font-family: 'Times New Roman', Times, serif; font-size: 22px; font-weight: bold;">
+                        Registration Form
+                    </div>
+                    <div style="margin-top: 12px; margin-bottom: -15px; font-size: 13px;">
+                        Register your Jackson Electronics product here
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-col"><label for="fname">First&nbsp;Name:</label></td>        
+                <td>
+                    <input type="text" id="fname" name="fname" class="input-tiny">
+                    <label style="margin-left: -2px; white-space: nowrap;" for="lname">Last&nbsp;Name:</label>
+                    <input type="text" class="input-tiny" id="lname" name="lname">
+                </td>
+            </tr>
+            <tr>
+                <td class="label-col"><label for="#1">Address#1:</label></td>
+                <td><input type="text" id="#1" name="#1" class="input-long"><br></td>
+            </tr>
+            <tr>
+                <td class="label-col"><label for="#2">Address#2:</label></td>
+                <td><input type="text" id="#2" name="#2" class="input-long"><br></td>
+            </tr>
+            <tr>
+                <td class="label-col"><label for="city">City:</label></td>
+                <td> 
+                    <input type="text" id="city" name="city" class="input-short">
+
+                    <label style="margin-left: -3px;" for="state">State:</label>
+                    <input type="text" id="state" name="state" style="width: 35px;">
+                    
+                    <label style="margin-left: 0px;" for="zip">Zip:</label>
+                    <input type="text" id="zip" name="zip" style="width: 60px;">
+                </td>
+            </tr>
+            <tr>
+                <td class="label-col"><label for="cou">Country:</label></td>
+                <td><input value="United States" type="text" id="cou" name="cou" class="input-short"></td>
+            </tr>
+            <tr class="separator-row">
+                <td colspan="2" style="padding-left: 65px; padding-right: 60px;">
+                    <hr class="separator-line">
+                </td>
+            </tr>
+            <tr>
+                <td class="label-col">Product:</td>
+                <td>
+                    <select style="width: 120px; background-color: white; padding: 2px;">
+                        <option>ScanMaster</option>
+                        <option>Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-col"><label for="date">Date&nbsp;Purchased</label></td>
+                <td><input type="text" id="date" name="date" class="input-short"></td>
+            </tr>
+            <tr>
+                <td class="label-col"><label for="#">Serial#</label></td>
+                <td><input type="text" id="#" name="#" class="input-short"></td>
+            </tr>
+            <tr>
+                <td class="label-col">Used for:</td>
+                <td>
+                    <table class="nested-table" style="margin-left: -3px;">
+                        <tr>
+                            <td style="width: 120px;"><input type="radio" name="role" value="Home">Home</td>
+                            <td><input type="radio" name="role" value="Educational Institution">Educational Institution</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 138px;"><input type="radio" name="role" value="Business">Business</td>
+                            <td><input type="radio" name="role" value="Other">Other</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="role" value="Goverment">Govemment</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-col">System(check&nbsp;all&nbsp;that&nbsp;apply):</td>
+                <td>
+                    <table class="nested-table" style="margin-left: -3px;">
+                        <tr>
+                            <td style="width: 120px;"><input type="checkbox" name="system_win">Windows</td>
+                            <td><input type="checkbox" name="system_unix">UNIX</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 138px;"><input type="checkbox" name="system_mac">Macintosh</td>
+                            <td><input type="checkbox" name="system_other">Other</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="separator-row">
+                <td colspan="2" style="padding-left: 65px; padding-right: 60px;">
+                    <hr class="separator-line">
+                </td>
+            </tr>
+            <tr>
+                <td class="label-col" style="vertical-align: top;">Comments?:</td>
+                <td>
+                    <textarea style="width: 360px; height: 120px; resize: none;"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: center; padding-top: 0px;">
+                    <button type="button">Click to register</button>
+                    <button type="button" style="margin-left: 0px;">Click to cancel</button>
+                </td>
+            </tr>
+        </table>
+</body>
+</html>
